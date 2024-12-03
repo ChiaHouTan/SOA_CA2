@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "5t10p+DpL8uuQCKKuQSn86rAFqGNkfII2sQEZsZSyZk=",
+  "Source": "SOA_CA2",
+  "BasePath": "_content/SOA_CA2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SOA_CA2.props" />
+</Project>
