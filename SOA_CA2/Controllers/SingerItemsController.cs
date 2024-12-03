@@ -18,20 +18,93 @@ namespace SOA_CA2.Controllers
         public SingerItemsController(SingerContext context)
         {
             _context = context;
+            context.Database.EnsureCreated();
         }
 
         // GET: api/SingerItems
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<SingerItem>>> GetSingersItem()
+        public async Task<ActionResult<IEnumerable<SingerDto>>> GetSingersItem()
         {
-            return await _context.SingersItem.ToListAsync();
+            if (_context.SingersItem == null)
+            {
+                return NotFound();
+            }
+
+            return await _context.SingersItem
+       .Include(singer => singer.Albums)
+       .ThenInclude(album => album.Songs)
+       .Select(singer => new SingerDto
+       {
+           ID = singer.ID,
+           SingerName = singer.SingerName,
+           SingerAge = singer.SingerAge,
+           SingerGender = singer.SingerGender.ToString(),
+           YearOfDebut = singer.YearOfDebut.ToString("yyyy"),
+           Albums = singer.Albums.Select(album => new AlbumDto
+           {
+               ID = album.ID,
+               AlbumName = album.AlbumName,
+               ReleaseDate = album.ReleaseDate,
+               AlbumCover = album.AlbumCover,
+               Songs = album.Songs.Select(song => new SongDto
+               {
+                   ID = song.ID,
+                   SongName = song.SongName,
+                   SongDuration = song.SongDuration,
+                   Lyricist = song.Lyricist,
+                   Composer = song.Composer,
+                   Arranger = song.Arranger,
+                   SongURL = song.SongURL,
+                   AlbumID = song.AlbumID
+               }).ToList(),
+               SingerID = album.SingerID
+           }).ToList()
+       })
+       .ToListAsync();
         }
 
         // GET: api/SingerItems/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<SingerItem>> GetSingerItem(Guid id)
+        public async Task<ActionResult<SingerDto>> GetSingerItem(Guid id)
         {
-            var singerItem = await _context.SingersItem.FindAsync(id);
+            if (_context.SingersItem == null)
+            {
+                return NotFound();
+            }
+            var singerItem = await _context.SingersItem
+                    .Where(singer => singer.ID == id)
+                    .Include(singer => singer.Albums)
+       .ThenInclude(album => album.Songs)
+       .Select(singer => new SingerDto
+       {
+           ID = singer.ID,
+           SingerName = singer.SingerName,
+           SingerAge = singer.SingerAge,
+           SingerGender = singer.SingerGender.ToString(),
+           YearOfDebut = singer.YearOfDebut.ToString("yyyy"),
+           Albums = singer.Albums.Select(album => new AlbumDto
+           {
+               ID = album.ID,
+               AlbumName = album.AlbumName,
+               ReleaseDate = album.ReleaseDate,
+               AlbumCover = album.AlbumCover,
+               Songs = album.Songs.Select(song => new SongDto
+               {
+                   ID = song.ID,
+                   SongName = song.SongName,
+                   SongDuration = song.SongDuration,
+                   Lyricist = song.Lyricist,
+                   Composer = song.Composer,
+                   Arranger = song.Arranger,
+                   SongURL = song.SongURL,
+                   AlbumID = song.AlbumID
+               }).ToList(),
+               SingerID = album.SingerID
+           }).ToList()
+       })
+       .FirstOrDefaultAsync();
+
+            // var singerItem = await _context.SingersItem.FindAsync(id);
 
             if (singerItem == null)
             {
@@ -44,14 +117,25 @@ namespace SOA_CA2.Controllers
         // PUT: api/SingerItems/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutSingerItem(Guid id, SingerItem singerItem)
+        public async Task<IActionResult> PutSingerItem(Guid id, SingerItem singer)
         {
-            if (id != singerItem.ID)
+            if (id != singer.ID)
             {
                 return BadRequest();
             }
 
-            _context.Entry(singerItem).State = EntityState.Modified;
+            var singerItem = await _context.SingersItem.FindAsync(id);
+            if (singerItem == null)
+            {
+                return NotFound();
+            }
+
+            // Update only the specified fields
+            singerItem.ID = singer.ID;
+            singerItem.SingerName = singer.SingerName;
+            singerItem.SingerAge = singer.SingerAge;
+            singerItem.SingerGender = singer.SingerGender;
+            singerItem.YearOfDebut = singer.YearOfDebut;
 
             try
             {

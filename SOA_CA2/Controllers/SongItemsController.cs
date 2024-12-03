@@ -18,20 +18,56 @@ namespace SOA_CA2.Controllers
         public SongItemsController(SingerContext context)
         {
             _context = context;
+            context.Database.EnsureCreated();
         }
 
         // GET: api/SongItems
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<SongItem>>> GetSongsItem()
+        public async Task<ActionResult<IEnumerable<SongDto>>> GetSongsItem()
         {
-            return await _context.SongsItem.ToListAsync();
+            if (_context.SongsItem == null)
+            {
+                return NotFound();
+            }
+
+            return await _context.SongsItem.Select(song =>
+                new SongDto()
+                {
+                    ID = song.ID,
+                    SongName = song.SongName,
+                    SongDuration = song.SongDuration,
+                    Lyricist = song.Lyricist,
+                    Composer = song.Composer,
+                    Arranger = song.Arranger,
+                    SongURL = song.SongURL,
+                    AlbumID = song.AlbumID
+                }
+                ).ToListAsync();
         }
 
         // GET: api/SongItems/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<SongItem>> GetSongItem(Guid id)
+        public async Task<ActionResult<SongDto>> GetSongItem(Guid id)
         {
-            var songItem = await _context.SongsItem.FindAsync(id);
+            if (_context.SongsItem == null)
+            {
+                return NotFound();
+            }
+            // var songItem = await _context.SongsItem.FindAsync(id);
+            var songItem = await _context.SongsItem
+                   .Where(song => song.ID == id)
+                   .Select(song => new SongDto()
+                   {
+                       ID = song.ID,
+                       SongName = song.SongName,
+                       SongDuration = song.SongDuration,
+                       Lyricist = song.Lyricist,
+                       Composer = song.Composer,
+                       Arranger = song.Arranger,
+                       SongURL = song.SongURL,
+                       AlbumID = song.AlbumID
+                   })
+                   .FirstOrDefaultAsync();
 
             if (songItem == null)
             {

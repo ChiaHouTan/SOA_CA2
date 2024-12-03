@@ -25,4 +25,18 @@ namespace SOA_CA2.Models
         public DateTime YearOfDebut { get; set; }
         public ICollection<AlbumItem> Albums { get; set; } = new List<AlbumItem>();
     }
+
+    public class SingerDto
+    {
+
+        [Key]
+        public Guid ID { get; set; }
+        [Required]
+        [MaxLength(50)]
+        public string SingerName { get; set; }
+        public int SingerAge { get; set; }
+        public string SingerGender { get; set; }
+        public string YearOfDebut { get; set; }
+        public ICollection<AlbumDto> Albums { get; set; } = new List<AlbumDto>();
+    }
 }

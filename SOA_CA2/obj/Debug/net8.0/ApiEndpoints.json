@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[SOA_CA2.Models.AlbumItem, SOA_CA2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SOA_CA2.Models.AlbumDto, SOA_CA2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -61,7 +61,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "SOA_CA2.Models.AlbumItem",
+        "Type": "SOA_CA2.Models.AlbumDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -85,7 +85,7 @@
         "IsRequired": true
       },
       {
-        "Name": "albumItem",
+        "Name": "album",
         "Type": "SOA_CA2.Models.AlbumItem",
         "IsRequired": true
       }
@@ -118,7 +118,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[SOA_CA2.Models.SingerItem, SOA_CA2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SOA_CA2.Models.SingerDto, SOA_CA2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -170,7 +170,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "SOA_CA2.Models.SingerItem",
+        "Type": "SOA_CA2.Models.SingerDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -194,7 +194,7 @@
         "IsRequired": true
       },
       {
-        "Name": "singerItem",
+        "Name": "singer",
         "Type": "SOA_CA2.Models.SingerItem",
         "IsRequired": true
       }
@@ -227,7 +227,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[SOA_CA2.Models.SongItem, SOA_CA2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SOA_CA2.Models.SongDto, SOA_CA2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -279,7 +279,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "SOA_CA2.Models.SongItem",
+        "Type": "SOA_CA2.Models.SongDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
