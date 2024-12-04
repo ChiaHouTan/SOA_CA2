@@ -80,14 +80,28 @@ namespace SOA_CA2.Controllers
         // PUT: api/SongItems/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutSongItem(Guid id, SongItem songItem)
+        public async Task<IActionResult> PutSongItem(Guid id, SongItem song)
         {
-            if (id != songItem.ID)
+            if (id != song.ID)
             {
                 return BadRequest();
             }
 
-            _context.Entry(songItem).State = EntityState.Modified;
+            // Check if the associated singer exists
+            var songItem = await _context.SongsItem.FindAsync(id);
+            if (songItem == null)
+            {
+                return NotFound();
+            }
+
+            // Update only the specified fields
+            songItem.SongName = song.SongName;
+            songItem.SongDuration = song.SongDuration;
+            songItem.Lyricist = song.Lyricist;
+            songItem.Composer = song.Composer;
+            songItem.Arranger = song.Arranger;
+            songItem.SongURL = song.SongURL;
+            songItem.AlbumID = song.AlbumID;
 
             try
             {
@@ -113,6 +127,11 @@ namespace SOA_CA2.Controllers
         [HttpPost]
         public async Task<ActionResult<SongItem>> PostSongItem(SongItem songItem)
         {
+            if (_context.SongsItem == null)
+            {
+                return Problem("Entity set 'SingerContext.SongsItem'  is null.");
+            }
+
             _context.SongsItem.Add(songItem);
             await _context.SaveChangesAsync();
 
@@ -123,6 +142,10 @@ namespace SOA_CA2.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteSongItem(Guid id)
         {
+            if (_context.SongsItem == null)
+            {
+                return NotFound();
+            }
             var songItem = await _context.SongsItem.FindAsync(id);
             if (songItem == null)
             {

@@ -21,7 +21,7 @@ namespace SOA_CA2.Models
     {
         public Guid ID { get; set; }
         public string AlbumName { get; set; }
-        public DateTime ReleaseDate { get; set; }
+        public string ReleaseDate { get; set; }
         public string? AlbumCover { get; set; }
         public ICollection<SongDto> Songs { get; set; } = new List<SongDto>();
         public Guid SingerID { get; set; }

@@ -36,7 +36,7 @@ namespace SOA_CA2.Controllers
        {
            ID = album.ID,
            AlbumName = album.AlbumName,
-           ReleaseDate = album.ReleaseDate,
+           ReleaseDate = album.ReleaseDate.ToString("yyyy-MM-dd"),
            AlbumCover = album.AlbumCover,
            SingerID = album.SingerID,
            Songs = album.Songs.Select(song => new SongDto
@@ -70,7 +70,7 @@ namespace SOA_CA2.Controllers
        {
            ID = album.ID,
            AlbumName = album.AlbumName,
-           ReleaseDate = album.ReleaseDate,
+           ReleaseDate = album.ReleaseDate.ToString("yyyy-MM-dd"),
            AlbumCover = album.AlbumCover,
            SingerID = album.SingerID,
            Songs = album.Songs.Select(song => new SongDto
@@ -142,6 +142,11 @@ namespace SOA_CA2.Controllers
         [HttpPost]
         public async Task<ActionResult<AlbumItem>> PostAlbumItem(AlbumItem albumItem)
         {
+            if (_context.AlbumsItem == null)
+            {
+                return Problem("Entity set 'SingerContext.AlbumsItem'  is null.");
+            }
+
             _context.AlbumsItem.Add(albumItem);
             await _context.SaveChangesAsync();
 
@@ -152,6 +157,10 @@ namespace SOA_CA2.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAlbumItem(Guid id)
         {
+            if (_context.AlbumsItem == null)
+            {
+                return NotFound();
+            }
             var albumItem = await _context.AlbumsItem.FindAsync(id);
             if (albumItem == null)
             {

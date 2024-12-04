@@ -303,7 +303,7 @@
         "IsRequired": true
       },
       {
-        "Name": "songItem",
+        "Name": "song",
         "Type": "SOA_CA2.Models.SongItem",
         "IsRequired": true
       }

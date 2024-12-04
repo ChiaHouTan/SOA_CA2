@@ -44,7 +44,7 @@ namespace SOA_CA2.Controllers
            {
                ID = album.ID,
                AlbumName = album.AlbumName,
-               ReleaseDate = album.ReleaseDate,
+               ReleaseDate = album.ReleaseDate.ToString("yyyy-MM-dd"),
                AlbumCover = album.AlbumCover,
                Songs = album.Songs.Select(song => new SongDto
                {
@@ -86,7 +86,7 @@ namespace SOA_CA2.Controllers
            {
                ID = album.ID,
                AlbumName = album.AlbumName,
-               ReleaseDate = album.ReleaseDate,
+               ReleaseDate = album.ReleaseDate.ToString("yyyy-MM-dd"),
                AlbumCover = album.AlbumCover,
                Songs = album.Songs.Select(song => new SongDto
                {
@@ -161,21 +161,64 @@ namespace SOA_CA2.Controllers
         [HttpPost]
         public async Task<ActionResult<SingerItem>> PostSingerItem(SingerItem singerItem)
         {
+            if (_context.SingersItem == null)
+            {
+                return Problem("Entity set 'SingerContext.SingersItem'  is null.");
+            }
             _context.SingersItem.Add(singerItem);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetSingerItem), new { id = singerItem.ID }, singerItem);
         }
 
-        // DELETE: api/SingerItems/5
-        [HttpDelete("{id}")]
+    //    // DELETE: api/SingerItems/5 baclup
+    //    [HttpDelete("{id}")]
+    //    public async Task<IActionResult> DeleteSingerItem(Guid id)
+    //    {
+    //        if (_context.SingersItem == null)
+    //        {
+    //            return NotFound();
+    //        }
+    //        var singerItem = await _context.SingersItem.FindAsync(id);
+    //        if (singerItem == null)
+    //        {
+    //            return NotFound();
+    //        }
+
+    //        _context.SingersItem.Remove(singerItem);
+    //        await _context.SaveChangesAsync();
+
+    //        return NoContent();
+    //    }
+
+    //    private bool SingerItemExists(Guid id)
+    //    {
+    //        return _context.SingersItem.Any(e => e.ID == id);
+    //    }
+    //} 
+
+    // DELETE: api/SingerItems/5
+    [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteSingerItem(Guid id)
         {
+            if (_context.SingersItem == null)
+            {
+                return NotFound();
+            }
             var singerItem = await _context.SingersItem.FindAsync(id);
             if (singerItem == null)
             {
                 return NotFound();
             }
+
+            var associatedAlbums = _context.AlbumsItem.Where(a => a.SingerID == id).ToList();
+            foreach (var album in associatedAlbums)
+            {
+                var associatedSongs = _context.SongsItem.Where(s => s.AlbumID == album.ID).ToList();
+                _context.SongsItem.RemoveRange(associatedSongs);
+            }
+            _context.AlbumsItem.RemoveRange(associatedAlbums);
+            _context.SingersItem.Remove(singerItem);
 
             _context.SingersItem.Remove(singerItem);
             await _context.SaveChangesAsync();
