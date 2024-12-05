@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SOA_CA2.Models;
 
@@ -183,34 +178,34 @@ namespace SOA_CA2.Controllers
             return CreatedAtAction(nameof(GetSingerItem), new { id = singerItem.ID }, singerItem);
         }
 
-    //    // DELETE: api/SingerItems/5 baclup
-    //    [HttpDelete("{id}")]
-    //    public async Task<IActionResult> DeleteSingerItem(Guid id)
-    //    {
-    //        if (_context.SingersItem == null)
-    //        {
-    //            return NotFound();
-    //        }
-    //        var singerItem = await _context.SingersItem.FindAsync(id);
-    //        if (singerItem == null)
-    //        {
-    //            return NotFound();
-    //        }
+        //    // DELETE: api/SingerItems/5 baclup
+        //    [HttpDelete("{id}")]
+        //    public async Task<IActionResult> DeleteSingerItem(Guid id)
+        //    {
+        //        if (_context.SingersItem == null)
+        //        {
+        //            return NotFound();
+        //        }
+        //        var singerItem = await _context.SingersItem.FindAsync(id);
+        //        if (singerItem == null)
+        //        {
+        //            return NotFound();
+        //        }
 
-    //        _context.SingersItem.Remove(singerItem);
-    //        await _context.SaveChangesAsync();
+        //        _context.SingersItem.Remove(singerItem);
+        //        await _context.SaveChangesAsync();
 
-    //        return NoContent();
-    //    }
+        //        return NoContent();
+        //    }
 
-    //    private bool SingerItemExists(Guid id)
-    //    {
-    //        return _context.SingersItem.Any(e => e.ID == id);
-    //    }
-    //} 
+        //    private bool SingerItemExists(Guid id)
+        //    {
+        //        return _context.SingersItem.Any(e => e.ID == id);
+        //    }
+        //} 
 
-    // DELETE: api/SingerItems/5
-    [HttpDelete("{id}")]
+        // DELETE: api/SingerItems/5
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteSingerItem(Guid id)
         {
             var userRole = HttpContext.Items["UserRole"]?.ToString();

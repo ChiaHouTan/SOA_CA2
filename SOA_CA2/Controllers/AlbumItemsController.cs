@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SOA_CA2.Models;
 
@@ -31,7 +26,7 @@ namespace SOA_CA2.Controllers
             }
 
             return await _context.AlbumsItem
-       .Include(album => album.Songs) // Include Songs for the album
+            .Include(album => album.Songs) // Include Songs for the album
        .Select(album => new AlbumDto
        {
            ID = album.ID,

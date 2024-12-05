@@ -1,7 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
-using System.Reflection;
-using Newtonsoft.Json;
 
 namespace SOA_CA2.Models
 {

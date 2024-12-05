@@ -1,13 +1,8 @@
-﻿using Xunit;
-using Moq;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using SOA_CA2.Controllers;
 using SOA_CA2.Models;
+using Xunit;
 
 namespace SOA_CA2.Test
 {

@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using SOA_CA2.Models;
 using Microsoft.OpenApi.Models;
-using SOA_CA2.Services;
 using SOA_CA2.Middlewares;
+using SOA_CA2.Models;
+using SOA_CA2.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

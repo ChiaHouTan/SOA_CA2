@@ -1,8 +1,5 @@
 ﻿// Create a file named ApiKeyService.cs in the Services folder
 using SOA_CA2.Models;
-using SOA_CA2.Services;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace SOA_CA2.Services
 {

@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using SOA_CA2.Services;
-using System.Threading.Tasks;
+﻿using SOA_CA2.Services;
 
 namespace SOA_CA2.Middlewares
 {

@@ -1,11 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SOA_CA2.Controllers;
 using SOA_CA2.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace SOA_CA2.Test
@@ -19,7 +15,7 @@ namespace SOA_CA2.Test
         {
             // Setup in-memory database with data seeding from SingerContext
             var options = new DbContextOptionsBuilder<SingerContext>()
-                .UseInMemoryDatabase(databaseName: "TestDatabase")
+                .UseInMemoryDatabase(databaseName: "SingersList")
                 .Options;
 
             _context = new SingerContext(options); // Create the in-memory context
