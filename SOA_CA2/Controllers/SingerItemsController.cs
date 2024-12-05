@@ -119,6 +119,12 @@ namespace SOA_CA2.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutSingerItem(Guid id, SingerItem singer)
         {
+            var userRole = HttpContext.Items["UserRole"]?.ToString();
+            if (userRole != "Admin")
+            {
+                return Forbid("Only admins can PUT.");
+            }
+
             if (id != singer.ID)
             {
                 return BadRequest();
@@ -161,6 +167,12 @@ namespace SOA_CA2.Controllers
         [HttpPost]
         public async Task<ActionResult<SingerItem>> PostSingerItem(SingerItem singerItem)
         {
+            var userRole = HttpContext.Items["UserRole"]?.ToString();
+            if (userRole != "Admin")
+            {
+                return Forbid("Only admins can POST.");
+            }
+
             if (_context.SingersItem == null)
             {
                 return Problem("Entity set 'SingerContext.SingersItem'  is null.");
@@ -201,6 +213,11 @@ namespace SOA_CA2.Controllers
     [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteSingerItem(Guid id)
         {
+            var userRole = HttpContext.Items["UserRole"]?.ToString();
+            if (userRole != "Admin")
+            {
+                return Forbid("Only admins can DELETE.");
+            }
             if (_context.SingersItem == null)
             {
                 return NotFound();
