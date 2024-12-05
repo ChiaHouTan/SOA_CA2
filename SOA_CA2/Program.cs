@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using SOA_CA2.Models;
 using Microsoft.OpenApi.Models;
 using SOA_CA2.Services;
+using SOA_CA2.Middlewares;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -10,7 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<SingerContext>(opt => opt.UseInMemoryDatabase("SingersList"));
 
 //builder.Services.AddDbContext<SingerContext>(opt => opt.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
-//        new MySqlServerVersion(new Version(8, 0, 39))));
+//        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -28,7 +29,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.UseMiddleware<SOA_CA2.Middlewares.ApiKeyMiddleware>();
+
+app.UseMiddleware<ApiKeyMiddleware>();
+app.UseMiddleware<GlobalExceptionHandlerMiddleware>();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
