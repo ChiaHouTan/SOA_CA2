@@ -3,20 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|c:\\users\\tanch\\desktop\\smart tech\\git upload\\soa_ca2\\soa_ca2\\controllers\\albumitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|solutionrelative:controllers\\albumitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|c:\\users\\tanch\\desktop\\smart tech\\git upload\\soa_ca2\\soa_ca2\\test\\singercontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|solutionrelative:test\\singercontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|c:\\users\\tanch\\desktop\\smart tech\\git upload\\soa_ca2\\soa_ca2\\test\\songcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|solutionrelative:test\\songcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|c:\\users\\tanch\\desktop\\smart tech\\git upload\\soa_ca2\\soa_ca2\\controllers\\songitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|solutionrelative:controllers\\songitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|c:\\users\\tanch\\desktop\\smart tech\\git upload\\soa_ca2\\soa_ca2\\test\\albumitemscontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|solutionrelative:test\\albumitemscontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|c:\\users\\tanch\\desktop\\smart tech\\git upload\\soa_ca2\\soa_ca2\\services\\apikeyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|solutionrelative:services\\apikeyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|c:\\users\\tanch\\desktop\\smart tech\\git upload\\soa_ca2\\soa_ca2\\controllers\\singeritemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|solutionrelative:controllers\\singeritemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|c:\\users\\tanch\\desktop\\smart tech\\git upload\\soa_ca2\\soa_ca2\\models\\albumitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|solutionrelative:models\\albumitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|c:\\users\\tanch\\desktop\\smart tech\\git upload\\soa_ca2\\soa_ca2\\controllers\\songitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|solutionrelative:controllers\\songitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|c:\\users\\tanch\\desktop\\smart tech\\git upload\\soa_ca2\\soa_ca2\\controllers\\albumitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|solutionrelative:controllers\\albumitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|c:\\users\\tanch\\desktop\\smart tech\\git upload\\soa_ca2\\soa_ca2\\models\\singercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|solutionrelative:models\\singercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|c:\\users\\tanch\\desktop\\smart tech\\git upload\\soa_ca2\\soa_ca2\\models\\apikey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|solutionrelative:models\\apikey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|c:\\users\\tanch\\desktop\\smart tech\\git upload\\soa_ca2\\soa_ca2\\models\\songitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|solutionrelative:models\\songitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|c:\\users\\tanch\\desktop\\smart tech\\git upload\\soa_ca2\\soa_ca2\\models\\singeritem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAEC1790-BF5A-4C0A-AAA1-20FC387C72D4}|SOA_CA2.csproj|solutionrelative:models\\singeritem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -36,48 +68,152 @@
               "RelativeDocumentMoniker": "Test\\SongControllerTest.cs",
               "ToolTip": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Test\\SongControllerTest.cs",
               "RelativeToolTip": "Test\\SongControllerTest.cs",
-              "ViewState": "AgIAAJsAAAAAAAAAAAArwK0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T19:47:19.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SongItemsController.cs",
-              "DocumentMoniker": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Controllers\\SongItemsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SongItemsController.cs",
-              "ToolTip": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Controllers\\SongItemsController.cs",
-              "RelativeToolTip": "Controllers\\SongItemsController.cs",
-              "ViewState": "AgIAAJcAAAAAAAAAAAAAwLEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T19:39:45.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SingerItemsController.cs",
-              "DocumentMoniker": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Controllers\\SingerItemsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SingerItemsController.cs",
-              "ToolTip": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Controllers\\SingerItemsController.cs",
-              "RelativeToolTip": "Controllers\\SingerItemsController.cs",
-              "ViewState": "AgIAANkAAAAAAAAAAAAYwOgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T19:39:41.455Z",
+              "WhenOpened": "2024-12-05T21:02:31.277Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SingerControllerTest.cs",
+              "DocumentMoniker": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Test\\SingerControllerTest.cs",
+              "RelativeDocumentMoniker": "Test\\SingerControllerTest.cs",
+              "ToolTip": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Test\\SingerControllerTest.cs",
+              "RelativeToolTip": "Test\\SingerControllerTest.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAwwDMAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T21:02:30.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AlbumItemsControllerTest.cs",
+              "DocumentMoniker": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Test\\AlbumItemsControllerTest.cs",
+              "RelativeDocumentMoniker": "Test\\AlbumItemsControllerTest.cs",
+              "ToolTip": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Test\\AlbumItemsControllerTest.cs",
+              "RelativeToolTip": "Test\\AlbumItemsControllerTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T21:02:29.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApiKeyService.cs",
+              "DocumentMoniker": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Services\\ApiKeyService.cs",
+              "RelativeDocumentMoniker": "Services\\ApiKeyService.cs",
+              "ToolTip": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Services\\ApiKeyService.cs",
+              "RelativeToolTip": "Services\\ApiKeyService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T21:02:17.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SongItemsController.cs",
+              "DocumentMoniker": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Controllers\\SongItemsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SongItemsController.cs",
+              "ToolTip": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Controllers\\SongItemsController.cs",
+              "RelativeToolTip": "Controllers\\SongItemsController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T21:01:26.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SingerItemsController.cs",
+              "DocumentMoniker": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Controllers\\SingerItemsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SingerItemsController.cs",
+              "ToolTip": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Controllers\\SingerItemsController.cs",
+              "RelativeToolTip": "Controllers\\SingerItemsController.cs",
+              "ViewState": "AgIAALsAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T21:01:25.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AlbumItemsController.cs",
               "DocumentMoniker": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Controllers\\AlbumItemsController.cs",
               "RelativeDocumentMoniker": "Controllers\\AlbumItemsController.cs",
               "ToolTip": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Controllers\\AlbumItemsController.cs",
               "RelativeToolTip": "Controllers\\AlbumItemsController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAmwBUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T19:39:20.609Z",
+              "WhenOpened": "2024-12-05T21:01:24.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApiKey.cs",
+              "DocumentMoniker": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Models\\ApiKey.cs",
+              "RelativeDocumentMoniker": "Models\\ApiKey.cs",
+              "ToolTip": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Models\\ApiKey.cs",
+              "RelativeToolTip": "Models\\ApiKey.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T21:00:25.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AlbumItem.cs",
+              "DocumentMoniker": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Models\\AlbumItem.cs",
+              "RelativeDocumentMoniker": "Models\\AlbumItem.cs",
+              "ToolTip": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Models\\AlbumItem.cs",
+              "RelativeToolTip": "Models\\AlbumItem.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA5wB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T21:00:24.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SingerContext.cs",
+              "DocumentMoniker": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Models\\SingerContext.cs",
+              "RelativeDocumentMoniker": "Models\\SingerContext.cs",
+              "ToolTip": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Models\\SingerContext.cs",
+              "RelativeToolTip": "Models\\SingerContext.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T21:00:23.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SongItem.cs",
+              "DocumentMoniker": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Models\\SongItem.cs",
+              "RelativeDocumentMoniker": "Models\\SongItem.cs",
+              "ToolTip": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Models\\SongItem.cs",
+              "RelativeToolTip": "Models\\SongItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T21:00:23.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SingerItem.cs",
+              "DocumentMoniker": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Models\\SingerItem.cs",
+              "RelativeDocumentMoniker": "Models\\SingerItem.cs",
+              "ToolTip": "C:\\Users\\tanch\\Desktop\\Smart Tech\\git upload\\SOA_CA2\\SOA_CA2\\Models\\SingerItem.cs",
+              "RelativeToolTip": "Models\\SingerItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T21:00:22.117Z",
               "EditorCaption": ""
             }
           ]
